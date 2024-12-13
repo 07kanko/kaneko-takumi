@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+    <title>天気予報アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  
+    <form>
+        <select name="area" id="area">
+            <option value="130000">東京</option>
+            <option value="110000">埼玉</option>
+            <option value="014100">釧路・根室地方</option>
+        </select>
+    </form> 
+
+    <div id="location">
+     地域を選択してください
+    </div>
+    <body trabslate="no"></body>
+    <link rel="stylesheet" href="./weather.css">
+    <div id="location"></div>
+    <a href="https://www.jma.go.jp/bosai/forecast/" target="_blank">気象庁のデータを元に作成</a>
+    <div class="weatherForecast">
+    <div class="weather">
+    <div class="date">(-)</div>
+    <img class="weatherImg">
+    <div class="temp"><span class="tempMin">--</span>/<span class="tempMax">--</span></div>
+  </div>
+</div>
+<script>
+  for (let i = 0; i < 6; i++) {
+    const el = document.querySelector('.weather').cloneNode(true);
+    document.querySelector('.weatherForecast').appendChild(el);
+  }
+</script>
+<script>
+    for(let i = 0; i < 6; i++){
+        const el = document.querySelector('.wearher').cloneNode(true);
+        document.querySelector('.weatherForecast').appendChild(el);
+        }
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
